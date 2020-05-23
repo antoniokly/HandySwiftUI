@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A43C30B82478DF9700EE8F88"
+               BlueprintIdentifier = "A4E43DA4247913D80053416C"
                BuildableName = "HandySwiftUI.framework"
                BlueprintName = "HandySwiftUI.tvOS"
                ReferencedContainer = "container:HandySwiftUI.xcodeproj">
@@ -50,7 +50,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A43C30B82478DF9700EE8F88"
+            BlueprintIdentifier = "A4E43DA4247913D80053416C"
             BuildableName = "HandySwiftUI.framework"
             BlueprintName = "HandySwiftUI.tvOS"
             ReferencedContainer = "container:HandySwiftUI.xcodeproj">

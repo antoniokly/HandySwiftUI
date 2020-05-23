@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct HCell<Content: View>: View {
+public struct HCollection<Content: View>: View {
     var cells: [Content]
     var fractions: [CGFloat]
     var spacing: CGFloat
     
-    init(cells: [Content], ratios: [CGFloat]? = nil, spacing: CGFloat = 0) {
+    public init(cells: [Content], ratios: [CGFloat]? = nil, spacing: CGFloat = 0) {
         self.cells = cells
         let ratios = ratios ?? .init(repeating: 1, count: cells.count)
         let sum = ratios.prefix(cells.count).reduce(0, {$0 + $1})
@@ -25,7 +25,7 @@ struct HCell<Content: View>: View {
         self.spacing = spacing
     }
     
-    var body: some View {
+    public var body: some View {
         let count = CGFloat(cells.count)
         return GeometryReader { geometry in
             HStack (spacing: self.spacing) {
@@ -41,7 +41,7 @@ struct HCell<Content: View>: View {
 struct HCell_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            HCell(
+            HCollection(
                 cells: [
                     Rectangle().cornerRadius(5).foregroundColor(.gray),
                     Rectangle().cornerRadius(5).foregroundColor(.gray),
@@ -51,7 +51,7 @@ struct HCell_Previews: PreviewProvider {
                 spacing: 2
             ).frame(height: 40)
             
-            HCell(
+            HCollection(
                 cells: [
                     Rectangle().cornerRadius(5).foregroundColor(.gray),
                     Rectangle().cornerRadius(5).foregroundColor(.gray),

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4E43D96247911EC0053416C"
-               BuildableName = "HandySwiftUI.framework"
-               BlueprintName = "HandySwiftUI.watchOS"
+               BlueprintIdentifier = "A48B64E72478E6320072BF44"
+               BuildableName = "HandySwiftUI.xcframework"
+               BlueprintName = "HandySwiftUI.xcframework"
                ReferencedContainer = "container:HandySwiftUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4E43D96247911EC0053416C"
-            BuildableName = "HandySwiftUI.framework"
-            BlueprintName = "HandySwiftUI.watchOS"
+            BlueprintIdentifier = "A48B64E72478E6320072BF44"
+            BuildableName = "HandySwiftUI.xcframework"
+            BlueprintName = "HandySwiftUI.xcframework"
             ReferencedContainer = "container:HandySwiftUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
