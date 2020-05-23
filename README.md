@@ -8,7 +8,7 @@ A library of handy SwiftUI components.
 
 ## Installation
 
-Build from source. Supports of CocoaPod coming soon.
+Build from source. Supports of CocoaPod, XCFramework coming soon.
 
 
 ## Usage
