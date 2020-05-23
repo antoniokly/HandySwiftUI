@@ -26,3 +26,7 @@ NavigationLink(destination: SomeView()) {
     Text("text")
 }
 ```
+
+## Donation
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UXRR2S35YMCQC&source=url)
