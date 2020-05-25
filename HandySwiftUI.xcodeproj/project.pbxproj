@@ -27,9 +27,6 @@
 		A42837922479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
 		A42837932479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
 		A42837942479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
-		A428379624794FA900D5B017 /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428379524794FA900D5B017 /* HGrid.swift */; };
-		A428379724794FA900D5B017 /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428379524794FA900D5B017 /* HGrid.swift */; };
-		A428379824794FA900D5B017 /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428379524794FA900D5B017 /* HGrid.swift */; };
 		A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B652724790BEE0072BF44 /* HandySwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
 		A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
@@ -44,7 +41,6 @@
 /* Begin PBXFileReference section */
 		A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkModifier.swift; sourceTree = "<group>"; };
 		A42837912479430E00D5B017 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
-		A428379524794FA900D5B017 /* HGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGrid.swift; sourceTree = "<group>"; };
 		A48B652524790BEE0072BF44 /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48B652724790BEE0072BF44 /* HandySwiftUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI.h; sourceTree = "<group>"; };
 		A48B652824790BEE0072BF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +105,6 @@
 				A48B652724790BEE0072BF44 /* HandySwiftUI.h */,
 				A48B652824790BEE0072BF44 /* Info.plist */,
 				A4E43D8224790C630053416C /* HCollection.swift */,
-				A428379524794FA900D5B017 /* HGrid.swift */,
 				A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */,
 				A42837912479430E00D5B017 /* LazyView.swift */,
 				A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */,
@@ -316,7 +311,6 @@
 				A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837922479430E00D5B017 /* LazyView.swift in Sources */,
 				A428378E2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A428379624794FA900D5B017 /* HGrid.swift in Sources */,
 				A4E43D8324790C640053416C /* HCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +322,6 @@
 				A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837932479430E00D5B017 /* LazyView.swift in Sources */,
 				A428378F2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A428379724794FA900D5B017 /* HGrid.swift in Sources */,
 				A4E43D9F247912130053416C /* HCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +333,6 @@
 				A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837942479430E00D5B017 /* LazyView.swift in Sources */,
 				A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A428379824794FA900D5B017 /* HGrid.swift in Sources */,
 				A4E43DAD247914080053416C /* HCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
