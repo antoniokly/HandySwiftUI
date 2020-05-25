@@ -2,7 +2,7 @@
 //  HandySwiftUI
 //  https://github.com/antoniokly/HandySwiftUI
 //
-//  Copyright © 2020 Antonio Yip. All rights reserved.
+//  Copyright © 2020 Antonio Yip.
 //  Licensed under the MIT license. See LICENSE file.
 //
 

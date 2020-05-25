@@ -2,7 +2,7 @@
 //  HandySwiftUI
 //  https://github.com/antoniokly/HandySwiftUI
 //
-//  Copyright © 2020 Antonio Yip. All rights reserved.
+//  Copyright © 2020 Antonio Yip.
 //  Licensed under the MIT license. See LICENSE file.
 //
 
@@ -12,6 +12,7 @@ public struct HCollection<Content: View>: View {
     var cells: [Content]
     var fractions: [CGFloat]
     var spacing: CGFloat
+
     
     public init(cells: [Content], ratios: [CGFloat]? = nil, spacing: CGFloat = 0) {
         self.cells = cells
@@ -43,23 +44,27 @@ struct HCell_Previews: PreviewProvider {
         VStack {
             HCollection(
                 cells: [
-                    Rectangle().cornerRadius(5).foregroundColor(.gray),
-                    Rectangle().cornerRadius(5).foregroundColor(.gray),
-                    Rectangle().cornerRadius(5).foregroundColor(.gray),
-                    Rectangle().cornerRadius(5).foregroundColor(.gray)
+                    cell(),
+                    AnyView(Circle()),
+                    cell(),
+                    cell(),
                 ],
                 spacing: 2
             ).frame(height: 40)
             
             HCollection(
                 cells: [
-                    Rectangle().cornerRadius(5).foregroundColor(.gray),
-                    Rectangle().cornerRadius(5).foregroundColor(.gray),
+                    cell(),
+                    cell(),
                 ],
                 ratios: [1, 3],
                 spacing: 2
             ).frame(height: 50)
         }
+    }
+    
+    static func cell() -> AnyView {
+        AnyView(Rectangle().cornerRadius(5).foregroundColor(.gray))
     }
 }
 #endif
