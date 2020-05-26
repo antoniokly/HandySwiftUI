@@ -51,6 +51,19 @@ Toggle(isOn: .constant(true)) {
 }.toggleStyle(CustomToggleStyle(onText: "開", offText: "關", onColor: .red))
 ```
 
+### PageView
+
+```swift
+PageView(pageCount: 5, currentPage: $currentPage, isNavigating: $isNavigating, titles: { String($0) }) { index in
+    if index == 0 {
+        Color.gray.edgesIgnoringSafeArea(.all)
+    } else if index == 1 {
+        Text("Page 2")
+    } else {
+        Text("More Page")
+    }
+}.indicator(currentPageSize: 10, defaultSize: 5, currentPageColor: .accentColor, defaultColor: .orange, opacity: 0.8)
+```
 
 ## Donation
 
