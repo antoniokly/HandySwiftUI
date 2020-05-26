@@ -35,10 +35,11 @@ NavigationLink(destination: SomeView()) {
 VStack {
   Text("text")
   Text("text1")
-}.watchOS {
-  $0.font(.system(size: 12, weight: .light))
-}.iOS {
-  $0.font(.system(size: 16, weight: .bold))
+}.watchOS { $0
+  .font(.system(size: 12, weight: .light))
+  .foregroundColor(.blue)
+}.iOS { $0
+  .font(.system(size: 16, weight: .bold))
 }
 ```
 
