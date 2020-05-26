@@ -52,6 +52,7 @@ Toggle(isOn: .constant(true)) {
 ```
 
 ### PageView
+<img src="./previews/PageView.png" width="200">
 
 ```swift
 PageView(pageCount: 5, currentPage: $currentPage, isNavigating: $isNavigating, titles: { String($0) }) { index in
