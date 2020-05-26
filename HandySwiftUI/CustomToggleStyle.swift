@@ -89,12 +89,12 @@ struct CustomToggleStyle_Previews: PreviewProvider {
             
             Toggle(isOn: .constant(true)) {
                 Text("Text")
-            }.toggleStyle(CustomToggleStyle(onText: "開", onColor: .orange))
+            }.toggleStyle(CustomToggleStyle(onText: "開", onColor: .red))
             
             Toggle(isOn: .constant(false)) {
                 Text("Text")
             }.toggleStyle(CustomToggleStyle(width: 100, height: 40, gap: 3, offText: "關", statusTextColor: .accentColor, offColor: .red, buttonColor: .accentColor))
-        }
+        }.padding()
         .previewLayout(.fixed(width: 200, height: 60))
     }
 }
