@@ -30,6 +30,7 @@ NavigationLink(destination: SomeView()) {
 ```swift
 VStack {
   Text("text")
+  Text("text1")
 }.watchOS {
   $0.font(.system(size: 12, weight: .light))
 }.iOS {
