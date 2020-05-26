@@ -4,29 +4,38 @@
 
 # HandySwiftUI
 
-A library of handy SwiftUI components.
+A library of handy SwiftUI components. Keep growing.
 
 ## Installation
 
-Build from source. Supports of CocoaPod, XCFramework coming soon.
+Build from source. Supports of CocoaPod, Swift Package, XCFramework(may be) coming soon.
 
 
 ## Usage
 
+### Push
 ```swift
-// NavigationLinkModifier
-
 Text("text").push {
   SomeView()
 } // can be followed by other modifiers
 
-// is equavalent to
+// is equivalent to
 
 NavigationLink(destination: SomeView()) {
     Text("text")
 }
 ```
 
+### Platform Specific
+```swift
+VStack {
+  Text("text")
+}.watchOS {
+  $0.font(.system(size: 12, weight: .light))
+}.iOS {
+  $0.font(.system(size: 16, weight: .bold))
+}
+```
 ## Donation
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UXRR2S35YMCQC&source=url)
