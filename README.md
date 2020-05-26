@@ -41,6 +41,15 @@ VStack {
   $0.font(.system(size: 16, weight: .bold))
 }
 ```
+
+### CustomToggleStyle
+```swift
+Toggle(isOn: .constant(true)) {
+  Text("Text")
+}.toggleStyle(CustomToggleStyle(onText: "開", offText: "關", onColor: .red))
+```
+
+
 ## Donation
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UXRR2S35YMCQC&source=url)
