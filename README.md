@@ -13,6 +13,10 @@ Build from source. Supports of CocoaPod, Swift Package, XCFramework(may be) comi
 
 ## Usage
 
+```
+Import HandySwiftUI
+```
+
 ### Push
 ```swift
 Text("text").push {
