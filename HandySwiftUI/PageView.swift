@@ -86,7 +86,7 @@ public extension PageView {
 
 #if DEBUG
 struct PageView_Previews: PreviewProvider {
-    @State static var currentPage = 3
+    @State static var currentPage = 1
     static var previews: some View {
         PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: .constant(false), titles: { String($0) }) { index in
             if index == 0 {
@@ -101,7 +101,7 @@ struct PageView_Previews: PreviewProvider {
                     Text("Page 4")
                 }
             }
-        }.indicator(currentPageSize: 20,
+        }.indicator(currentPageSize: 10,
                     defaultSize: 5,
                     currentPageColor: .accentColor,
                     defaultColor: .orange,
