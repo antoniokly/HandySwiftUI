@@ -17,12 +17,12 @@ Build from source. Supports of CocoaPod, Swift Package, XCFramework(may be) comi
 ```swift
 Text("text").push {
   SomeView()
-} // can be followed by other modifiers
+}.foregroundColor(.red)
 
 // is equivalent to
 
 NavigationLink(destination: SomeView()) {
-    Text("text")
+    Text("text").foregroundColor(.red)
 }
 ```
 
