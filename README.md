@@ -43,6 +43,8 @@ VStack {
 ```
 
 ### CustomToggleStyle
+<img src="./previews/CustomToggleStyle.png" width="200">
+
 ```swift
 Toggle(isOn: .constant(true)) {
   Text("Text")
