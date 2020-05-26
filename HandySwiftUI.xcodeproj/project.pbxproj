@@ -27,25 +27,33 @@
 		A42837922479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
 		A42837932479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
 		A42837942479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
+		A467551B247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
+		A467551C247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
+		A467551D247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
 		A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B652724790BEE0072BF44 /* HandySwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4AB329E247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
+		A4AB329F247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
+		A4AB32A0247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
 		A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
 		A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
 		A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
-		A4E43D8324790C640053416C /* HCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HCollection.swift */; };
+		A4E43D8324790C640053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
 		A4E43D9B247911EC0053416C /* HandySwiftUI_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4E43D9F247912130053416C /* HCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HCollection.swift */; };
+		A4E43D9F247912130053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
 		A4E43DA9247913D80053416C /* HandySwiftUI_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E43DA7247913D80053416C /* HandySwiftUI_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4E43DAD247914080053416C /* HCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HCollection.swift */; };
+		A4E43DAD247914080053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkModifier.swift; sourceTree = "<group>"; };
 		A42837912479430E00D5B017 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		A467551A247D0758006D0DF0 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A48B652524790BEE0072BF44 /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48B652724790BEE0072BF44 /* HandySwiftUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI.h; sourceTree = "<group>"; };
 		A48B652824790BEE0072BF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AB329D247D185700885127 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
-		A4E43D8224790C630053416C /* HCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCollection.swift; sourceTree = "<group>"; };
+		A4E43D8224790C630053416C /* HGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGrid.swift; sourceTree = "<group>"; };
 		A4E43D97247911EC0053416C /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI_watchOS.h; sourceTree = "<group>"; };
 		A4E43D9A247911EC0053416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,10 +112,12 @@
 			children = (
 				A48B652724790BEE0072BF44 /* HandySwiftUI.h */,
 				A48B652824790BEE0072BF44 /* Info.plist */,
-				A4E43D8224790C630053416C /* HCollection.swift */,
+				A4E43D8224790C630053416C /* HGrid.swift */,
 				A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */,
 				A42837912479430E00D5B017 /* LazyView.swift */,
 				A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */,
+				A467551A247D0758006D0DF0 /* PageView.swift */,
+				A4AB329D247D185700885127 /* View+.swift */,
 			);
 			path = HandySwiftUI;
 			sourceTree = "<group>";
@@ -308,10 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A467551B247D0758006D0DF0 /* PageView.swift in Sources */,
 				A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837922479430E00D5B017 /* LazyView.swift in Sources */,
 				A428378E2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4E43D8324790C640053416C /* HCollection.swift in Sources */,
+				A4AB329E247D185700885127 /* View+.swift in Sources */,
+				A4E43D8324790C640053416C /* HGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A467551C247D0758006D0DF0 /* PageView.swift in Sources */,
 				A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837932479430E00D5B017 /* LazyView.swift in Sources */,
 				A428378F2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4E43D9F247912130053416C /* HCollection.swift in Sources */,
+				A4AB329F247D185700885127 /* View+.swift in Sources */,
+				A4E43D9F247912130053416C /* HGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A467551D247D0758006D0DF0 /* PageView.swift in Sources */,
 				A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837942479430E00D5B017 /* LazyView.swift in Sources */,
 				A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4E43DAD247914080053416C /* HCollection.swift in Sources */,
+				A4AB32A0247D185700885127 /* View+.swift in Sources */,
+				A4E43DAD247914080053416C /* HGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

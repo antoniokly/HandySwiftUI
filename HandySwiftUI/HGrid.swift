@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct HCollection<Content: View>: View {
+public struct HGrid<Content: View>: View {
     var cells: [Content]
     var fractions: [CGFloat]
     var spacing: CGFloat
@@ -42,7 +42,7 @@ public struct HCollection<Content: View>: View {
 struct HCell_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            HCollection(
+            HGrid(
                 cells: [
                     cell(),
                     AnyView(Circle()),
@@ -52,7 +52,7 @@ struct HCell_Previews: PreviewProvider {
                 spacing: 2
             ).frame(height: 40)
             
-            HCollection(
+            HGrid(
                 cells: [
                     cell(),
                     cell(),
