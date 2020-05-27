@@ -10,22 +10,18 @@ import SwiftUI
 
 public struct PageView<Content: View>: View {
     let pageCount: Int
-    let titles : (Int) -> String
     let content: (Int) -> Content
     
     @Binding var currentPage: Int
-    @Binding var isNavigating: Bool
+    var isNavigating: Binding<Bool>?
     @GestureState var translation: CGFloat = 0
 
     public init(pageCount: Int,
-         currentPage: Binding<Int>,
-         isNavigating: Binding<Bool>,
-         titles: @escaping (Int) -> String,
-         @ViewBuilder content: @escaping (Int) -> Content) {
+                currentPage: Binding<Int>,
+                isNavigating: Binding<Bool>? = nil,
+                @ViewBuilder content: @escaping (Int) -> Content) {
         self.pageCount = pageCount
         self._currentPage = currentPage
-        self._isNavigating = isNavigating
-        self.titles = titles
         self.content = content
     }
 
@@ -36,8 +32,8 @@ public struct PageView<Content: View>: View {
                     self.content(index)
                         .frame(width: geometry.size.width)
                 }
-                .opacity(self.isNavigating ? 0 : 1)
-                .animation(self.isNavigating ? .none : .default)
+                .opacity(self.isNavigating?.wrappedValue == true ? 0 : 1)
+                .animation(self.isNavigating?.wrappedValue == true ? .none : .default)
             }
                 
             .frame(width: geometry.size.width, alignment: .leading)
@@ -53,7 +49,6 @@ public struct PageView<Content: View>: View {
                 }
             )
             .animation(.easeOut(duration: 0.3))
-            .navigationBarTitle(self.titles(self.currentPage))
         }
     }
 }
@@ -108,9 +103,10 @@ public extension PageView {
 struct PageView_Previews: PreviewProvider {
     @State static var currentPage = 1
     static var previews: some View {
-        PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: .constant(false), titles: { String($0) }) { index in
+        PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: nil) { index in
             if index == 0 {
-                Color.gray              .edgesIgnoringSafeArea(.all)
+                Color.gray
+                    .edgesIgnoringSafeArea(.all)
             } else if index == 1 {
                 Text("Page 2")
             } else if index == 2 {
