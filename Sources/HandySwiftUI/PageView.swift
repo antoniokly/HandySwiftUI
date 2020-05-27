@@ -63,17 +63,19 @@ struct IndicatorModifier: ViewModifier {
     var opacity: Double
     
     func body(content: Content) -> some View {
-        VStack {
+        ZStack {
             content
-            Spacer()
-            HStack(alignment: .center) {
-                ForEach(0..<pageCount, id: \.self) {
-                    Circle()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: $0 == self.currentPage ? self.currentPageSize : self.defaultSize)
-                        .foregroundColor($0 == self.currentPage ? self.currentPageColor : self.defaultColor)
-                        .animation(.easeOut(duration: 0.3))
-                        .opacity(self.opacity)
+            VStack {
+                Spacer()
+                HStack(alignment: .center) {
+                    ForEach(0..<pageCount, id: \.self) {
+                        Circle()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: $0 == self.currentPage ? self.currentPageSize : self.defaultSize)
+                            .foregroundColor($0 == self.currentPage ? self.currentPageColor : self.defaultColor)
+                            .animation(.easeOut(duration: 0.3))
+                            .opacity(self.opacity)
+                    }
                 }
             }
             .watchOS {
@@ -101,11 +103,12 @@ public extension PageView {
 
 #if DEBUG
 struct PageView_Previews: PreviewProvider {
-    @State static var currentPage = 1
+    @State static var currentPage = 0
     static var previews: some View {
         PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: nil) { index in
             if index == 0 {
                 Color.gray
+                    .frame(maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
             } else if index == 1 {
                 Text("Page 2")
