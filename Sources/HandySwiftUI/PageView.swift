@@ -37,25 +37,53 @@ public struct PageView<Content: View>: View {
                         .frame(width: geometry.size.width)
                 }
                 .opacity(self.isNavigating ? 0 : 1)
-                .animation(self.isNavigating ? .none : .easeInOut)
+                .animation(self.isNavigating ? .none : .default)
             }
                 
             .frame(width: geometry.size.width, alignment: .leading)
             .offset(x: -CGFloat(self.currentPage) * geometry.size.width)
             .offset(x: self.translation)
             .gesture(
-                withAnimation {
-                    DragGesture().updating(self.$translation) { value, state, _ in
-                        state = value.translation.width
-                    }.onEnded { value in
-                        let offset = value.translation.width / geometry.size.width
-                        let newIndex = (CGFloat(self.currentPage) - offset).rounded()
-                        self.currentPage = min(max(Int(newIndex), 0), self.pageCount - 1)
-                    }
+                DragGesture().updating(self.$translation) { value, state, _ in
+                    state = value.translation.width
+                }.onEnded { value in
+                    let offset = value.translation.width / geometry.size.width
+                    let newIndex = (CGFloat(self.currentPage) - offset).rounded()
+                    self.currentPage = min(max(Int(newIndex), 0), self.pageCount - 1)
                 }
             )
-            .animation(.easeInOut(duration: 0.3))
+            .animation(.easeOut(duration: 0.3))
             .navigationBarTitle(self.titles(self.currentPage))
+        }
+    }
+}
+
+struct IndicatorModifier: ViewModifier {
+    @Binding var currentPage: Int
+    var pageCount: Int
+    var currentPageSize: CGFloat
+    var defaultSize: CGFloat
+    var currentPageColor: Color?
+    var defaultColor: Color?
+    var opacity: Double
+    
+    func body(content: Content) -> some View {
+        VStack {
+            content
+            Spacer()
+            HStack(alignment: .center) {
+                ForEach(0..<pageCount, id: \.self) {
+                    Circle()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: $0 == self.currentPage ? self.currentPageSize : self.defaultSize)
+                        .foregroundColor($0 == self.currentPage ? self.currentPageColor : self.defaultColor)
+                        .animation(.easeOut(duration: 0.3))
+                        .opacity(self.opacity)
+                }
+            }
+            .watchOS {
+                $0.edgesIgnoringSafeArea(.bottom)
+            }
         }
     }
 }
@@ -66,24 +94,13 @@ public extension PageView {
                    currentPageColor: Color? = .white,
                    defaultColor: Color? = .gray,
                    opacity: Double = 1) -> some View {
-        ZStack {
-            self.body
-            VStack {
-                Spacer()
-                HStack(alignment: .center) {
-                    ForEach(0..<pageCount, id: \.self) {
-                        Circle()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: $0 == self.currentPage ? currentPageSize : defaultSize)
-                            .foregroundColor($0 == self.currentPage ? currentPageColor : defaultColor)
-                            .animation(.easeInOut(duration: 0.3))
-                            .opacity(opacity)
-                    }
-                }
-            }.watchOS {
-                $0.edgesIgnoringSafeArea(.bottom)
-            }
-        }
+        self.modifier(IndicatorModifier(currentPage: self.$currentPage,
+                                        pageCount: self.pageCount,
+                                        currentPageSize: currentPageSize,
+                                        defaultSize: defaultSize,
+                                        currentPageColor: currentPageColor,
+                                        defaultColor: defaultColor,
+                                        opacity: opacity))
     }
 }
 
