@@ -3,181 +3,155 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		A48B64E72478E6320072BF44 /* HandySwiftUI.xcframework */ = {
+		"HandySwiftUI::HandySwiftUIPackageTests::ProductTarget" /* HandySwiftUIPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A48B64E82478E6320072BF44 /* Build configuration list for PBXAggregateTarget "HandySwiftUI.xcframework" */;
+			buildConfigurationList = OBJ_43 /* Build configuration list for PBXAggregateTarget "HandySwiftUIPackageTests" */;
 			buildPhases = (
-				A48B64EB2478E6550072BF44 /* ShellScript */,
 			);
 			dependencies = (
+				OBJ_46 /* PBXTargetDependency */,
 			);
-			name = HandySwiftUI.xcframework;
-			productName = HandySwiftUI.xcframework;
+			name = HandySwiftUIPackageTests;
+			productName = HandySwiftUIPackageTests;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A428378E2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */; };
-		A428378F2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */; };
-		A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */; };
-		A42837922479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
-		A42837932479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
-		A42837942479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
-		A467551B247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
-		A467551C247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
-		A467551D247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
-		A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B652724790BEE0072BF44 /* HandySwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4AB329E247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
-		A4AB329F247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
-		A4AB32A0247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
-		A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
-		A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
-		A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
-		A4E43D8324790C640053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
-		A4E43D9B247911EC0053416C /* HandySwiftUI_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4E43D9F247912130053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
-		A4E43DA9247913D80053416C /* HandySwiftUI_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E43DA7247913D80053416C /* HandySwiftUI_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4E43DAD247914080053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
+		A42A34CB247DE28100C235AA /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A34CA247DE28100C235AA /* PageView.swift */; };
+		A42A34CF247DE33900C235AA /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A34CE247DE33900C235AA /* View+.swift */; };
+		A42A34D3247DE43200C235AA /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A34D0247DE43200C235AA /* CustomToggleStyle.swift */; };
+		A42A34D4247DE43200C235AA /* NavigationLinkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A34D1247DE43200C235AA /* NavigationLinkModifier.swift */; };
+		A42A34D5247DE43200C235AA /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A34D2247DE43200C235AA /* LazyView.swift */; };
+		OBJ_30 /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* HGrid.swift */; };
+		OBJ_41 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_52 /* HandySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HandySwiftUITests.swift */; };
+		OBJ_53 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTestManifests.swift */; };
+		OBJ_55 /* HandySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HandySwiftUI::HandySwiftUI::Product" /* HandySwiftUI.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A42A34C2247DDFF700C235AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HandySwiftUI::HandySwiftUI";
+			remoteInfo = HandySwiftUI;
+		};
+		A42A34C3247DDFF800C235AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HandySwiftUI::HandySwiftUITests";
+			remoteInfo = HandySwiftUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkModifier.swift; sourceTree = "<group>"; };
-		A42837912479430E00D5B017 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
-		A467551A247D0758006D0DF0 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		A48B652524790BEE0072BF44 /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A48B652724790BEE0072BF44 /* HandySwiftUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI.h; sourceTree = "<group>"; };
-		A48B652824790BEE0072BF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4AB329D247D185700885127 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
-		A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
-		A4E43D8224790C630053416C /* HGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGrid.swift; sourceTree = "<group>"; };
-		A4E43D97247911EC0053416C /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI_watchOS.h; sourceTree = "<group>"; };
-		A4E43D9A247911EC0053416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4E43DA5247913D80053416C /* HandySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4E43DA7247913D80053416C /* HandySwiftUI_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandySwiftUI_tvOS.h; sourceTree = "<group>"; };
-		A4E43DA8247913D80053416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42A34CA247DE28100C235AA /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		A42A34CE247DE33900C235AA /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		A42A34D0247DE43200C235AA /* CustomToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		A42A34D1247DE43200C235AA /* NavigationLinkModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationLinkModifier.swift; sourceTree = "<group>"; };
+		A42A34D2247DE43200C235AA /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		"HandySwiftUI::HandySwiftUI::Product" /* HandySwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"HandySwiftUI::HandySwiftUITests::Product" /* HandySwiftUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HandySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_11 /* HGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGrid.swift; sourceTree = "<group>"; };
+		OBJ_18 /* HandySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandySwiftUITests.swift; sourceTree = "<group>"; };
+		OBJ_19 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A48B652224790BEE0072BF44 /* Frameworks */ = {
+		OBJ_35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4E43D94247911EC0053416C /* Frameworks */ = {
+		OBJ_54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4E43DA2247913D80053416C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				OBJ_55 /* HandySwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A43C30922478DE5000EE8F88 = {
+		OBJ_16 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A48B652624790BEE0072BF44 /* HandySwiftUI */,
-				A4E43D98247911EC0053416C /* HandySwiftUI.watchOS */,
-				A4E43DA6247913D80053416C /* HandySwiftUI.tvOS */,
-				A43C309D2478DE5000EE8F88 /* Products */,
+				OBJ_17 /* HandySwiftUITests */,
 			);
-			sourceTree = "<group>";
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
 		};
-		A43C309D2478DE5000EE8F88 /* Products */ = {
+		OBJ_17 /* HandySwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A48B652524790BEE0072BF44 /* HandySwiftUI.framework */,
-				A4E43D97247911EC0053416C /* HandySwiftUI.framework */,
-				A4E43DA5247913D80053416C /* HandySwiftUI.framework */,
+				OBJ_18 /* HandySwiftUITests.swift */,
+				OBJ_19 /* XCTestManifests.swift */,
+			);
+			name = HandySwiftUITests;
+			path = Tests/HandySwiftUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"HandySwiftUI::HandySwiftUITests::Product" /* HandySwiftUITests.xctest */,
+				"HandySwiftUI::HandySwiftUI::Product" /* HandySwiftUI.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A48B652624790BEE0072BF44 /* HandySwiftUI */ = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				A48B652724790BEE0072BF44 /* HandySwiftUI.h */,
-				A48B652824790BEE0072BF44 /* Info.plist */,
-				A4E43D8224790C630053416C /* HGrid.swift */,
-				A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */,
-				A42837912479430E00D5B017 /* LazyView.swift */,
-				A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */,
-				A467551A247D0758006D0DF0 /* PageView.swift */,
-				A4AB329D247D185700885127 /* View+.swift */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_16 /* Tests */,
+				OBJ_20 /* Products */,
 			);
-			path = HandySwiftUI;
+			name = "";
 			sourceTree = "<group>";
 		};
-		A4E43D98247911EC0053416C /* HandySwiftUI.watchOS */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */,
-				A4E43D9A247911EC0053416C /* Info.plist */,
+				OBJ_8 /* HandySwiftUI */,
 			);
-			path = HandySwiftUI.watchOS;
-			sourceTree = "<group>";
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
-		A4E43DA6247913D80053416C /* HandySwiftUI.tvOS */ = {
+		OBJ_8 /* HandySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				A4E43DA7247913D80053416C /* HandySwiftUI_tvOS.h */,
-				A4E43DA8247913D80053416C /* Info.plist */,
+				A42A34CE247DE33900C235AA /* View+.swift */,
+				OBJ_11 /* HGrid.swift */,
+				A42A34CA247DE28100C235AA /* PageView.swift */,
+				A42A34D2247DE43200C235AA /* LazyView.swift */,
+				A42A34D0247DE43200C235AA /* CustomToggleStyle.swift */,
+				A42A34D1247DE43200C235AA /* NavigationLinkModifier.swift */,
 			);
-			path = HandySwiftUI.tvOS;
-			sourceTree = "<group>";
+			name = HandySwiftUI;
+			path = Sources/HandySwiftUI;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		A48B652024790BEE0072BF44 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4E43D92247911EC0053416C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4E43D9B247911EC0053416C /* HandySwiftUI_watchOS.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4E43DA0247913D80053416C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4E43DA9247913D80053416C /* HandySwiftUI_tvOS.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		A48B652424790BEE0072BF44 /* HandySwiftUI */ = {
+		"HandySwiftUI::HandySwiftUI" /* HandySwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A48B652A24790BEE0072BF44 /* Build configuration list for PBXNativeTarget "HandySwiftUI" */;
+			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "HandySwiftUI" */;
 			buildPhases = (
-				A48B652024790BEE0072BF44 /* Headers */,
-				A48B652124790BEE0072BF44 /* Sources */,
-				A48B652224790BEE0072BF44 /* Frameworks */,
-				A48B652324790BEE0072BF44 /* Resources */,
+				OBJ_27 /* Sources */,
+				OBJ_35 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,537 +159,352 @@
 			);
 			name = HandySwiftUI;
 			productName = HandySwiftUI;
-			productReference = A48B652524790BEE0072BF44 /* HandySwiftUI.framework */;
+			productReference = "HandySwiftUI::HandySwiftUI::Product" /* HandySwiftUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A4E43D96247911EC0053416C /* HandySwiftUI.watchOS */ = {
+		"HandySwiftUI::HandySwiftUITests" /* HandySwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4E43D9C247911EC0053416C /* Build configuration list for PBXNativeTarget "HandySwiftUI.watchOS" */;
+			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "HandySwiftUITests" */;
 			buildPhases = (
-				A4E43D92247911EC0053416C /* Headers */,
-				A4E43D93247911EC0053416C /* Sources */,
-				A4E43D94247911EC0053416C /* Frameworks */,
-				A4E43D95247911EC0053416C /* Resources */,
+				OBJ_51 /* Sources */,
+				OBJ_54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_56 /* PBXTargetDependency */,
+			);
+			name = HandySwiftUITests;
+			productName = HandySwiftUITests;
+			productReference = "HandySwiftUI::HandySwiftUITests::Product" /* HandySwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"HandySwiftUI::SwiftPMPackageDescription" /* HandySwiftUIPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_37 /* Build configuration list for PBXNativeTarget "HandySwiftUIPackageDescription" */;
+			buildPhases = (
+				OBJ_40 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HandySwiftUI.watchOS;
-			productName = HandySwiftUI.watchOS;
-			productReference = A4E43D97247911EC0053416C /* HandySwiftUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4E43DA4247913D80053416C /* HandySwiftUI.tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4E43DAA247913D80053416C /* Build configuration list for PBXNativeTarget "HandySwiftUI.tvOS" */;
-			buildPhases = (
-				A4E43DA0247913D80053416C /* Headers */,
-				A4E43DA1247913D80053416C /* Sources */,
-				A4E43DA2247913D80053416C /* Frameworks */,
-				A4E43DA3247913D80053416C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HandySwiftUI.tvOS;
-			productName = HandySwiftUI.tvOS;
-			productReference = A4E43DA5247913D80053416C /* HandySwiftUI.framework */;
+			name = HandySwiftUIPackageDescription;
+			productName = HandySwiftUIPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A43C30932478DE5000EE8F88 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Antonio Yip";
-				TargetAttributes = {
-					A48B64E72478E6320072BF44 = {
-						CreatedOnToolsVersion = 11.4;
-					};
-					A48B652424790BEE0072BF44 = {
-						CreatedOnToolsVersion = 11.4;
-						LastSwiftMigration = 1140;
-					};
-					A4E43D96247911EC0053416C = {
-						CreatedOnToolsVersion = 11.4;
-					};
-					A4E43DA4247913D80053416C = {
-						CreatedOnToolsVersion = 11.4;
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = A43C30962478DE5000EE8F88 /* Build configuration list for PBXProject "HandySwiftUI" */;
-			compatibilityVersion = "Xcode 11.0";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "HandySwiftUI" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = A43C30922478DE5000EE8F88;
-			productRefGroup = A43C309D2478DE5000EE8F88 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A48B64E72478E6320072BF44 /* HandySwiftUI.xcframework */,
-				A48B652424790BEE0072BF44 /* HandySwiftUI */,
-				A4E43D96247911EC0053416C /* HandySwiftUI.watchOS */,
-				A4E43DA4247913D80053416C /* HandySwiftUI.tvOS */,
+				"HandySwiftUI::HandySwiftUI" /* HandySwiftUI */,
+				"HandySwiftUI::SwiftPMPackageDescription" /* HandySwiftUIPackageDescription */,
+				"HandySwiftUI::HandySwiftUIPackageTests::ProductTarget" /* HandySwiftUIPackageTests */,
+				"HandySwiftUI::HandySwiftUITests" /* HandySwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A48B652324790BEE0072BF44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4E43D95247911EC0053416C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4E43DA3247913D80053416C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A48B64EB2478E6550072BF44 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "rm -rd \"build/HandySwiftUI.xcframework\"\nxcodebuild archive -scheme HandySwiftUI -destination \"generic/platform=iOS\" -archivePath \"$TEMP_DIR/HandySwiftUI.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme HandySwiftUI -destination \"generic/platform=iOS\" -archivePath \"$TEMP_DIR/HandySwiftUI.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme HandySwiftUI -destination \"platform=macOS\" -archivePath \"$TEMP_DIR/HandySwiftUI.macOS.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme HandySwiftUI.watchOS -destination \"generic/platform=watchOS\" -archivePath \"$TEMP_DIR/HandySwiftUI.watchOS.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme HandySwiftUI.tvOS -destination \"generic/platform=tvOS\" -archivePath \"$TEMP_DIR/HandySwiftUI.tvOS.xcarchive\" SKIP_INSTALL=NO\nxcodebuild -create-xcframework -framework \"$TEMP_DIR/HandySwiftUI.xcarchive/Products/Library/Frameworks/HandySwiftUI.framework\" -framework \"$TEMP_DIR/HandySwiftUI.watchOS.xcarchive/Products/Library/Frameworks/HandySwiftUI.framework\" -framework \"$TEMP_DIR/HandySwiftUI.tvOS.xcarchive/Products/Library/Frameworks/HandySwiftUI.framework\" -framework \"$TEMP_DIR/HandySwiftUI.macOS.xcarchive/Products/Library/Frameworks/HandySwiftUI.framework\" -output \"build/HandySwiftUI.xcframework\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A48B652124790BEE0072BF44 /* Sources */ = {
+		OBJ_27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A467551B247D0758006D0DF0 /* PageView.swift in Sources */,
-				A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
-				A42837922479430E00D5B017 /* LazyView.swift in Sources */,
-				A428378E2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4AB329E247D185700885127 /* View+.swift in Sources */,
-				A4E43D8324790C640053416C /* HGrid.swift in Sources */,
+				A42A34D5247DE43200C235AA /* LazyView.swift in Sources */,
+				A42A34D3247DE43200C235AA /* CustomToggleStyle.swift in Sources */,
+				A42A34CB247DE28100C235AA /* PageView.swift in Sources */,
+				A42A34CF247DE33900C235AA /* View+.swift in Sources */,
+				OBJ_30 /* HGrid.swift in Sources */,
+				A42A34D4247DE43200C235AA /* NavigationLinkModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4E43D93247911EC0053416C /* Sources */ = {
+		OBJ_40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A467551C247D0758006D0DF0 /* PageView.swift in Sources */,
-				A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
-				A42837932479430E00D5B017 /* LazyView.swift in Sources */,
-				A428378F2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4AB329F247D185700885127 /* View+.swift in Sources */,
-				A4E43D9F247912130053416C /* HGrid.swift in Sources */,
+				OBJ_41 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4E43DA1247913D80053416C /* Sources */ = {
+		OBJ_51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A467551D247D0758006D0DF0 /* PageView.swift in Sources */,
-				A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
-				A42837942479430E00D5B017 /* LazyView.swift in Sources */,
-				A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
-				A4AB32A0247D185700885127 /* View+.swift in Sources */,
-				A4E43DAD247914080053416C /* HGrid.swift in Sources */,
+				OBJ_52 /* HandySwiftUITests.swift in Sources */,
+				OBJ_53 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HandySwiftUI::HandySwiftUITests" /* HandySwiftUITests */;
+			targetProxy = A42A34C3247DDFF800C235AA /* PBXContainerItemProxy */;
+		};
+		OBJ_56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HandySwiftUI::HandySwiftUI" /* HandySwiftUI */;
+			targetProxy = A42A34C2247DDFF700C235AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		A43C30A22478DE5000EE8F88 /* Debug */ = {
+		OBJ_25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HandySwiftUI.xcodeproj/HandySwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HandySwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = HandySwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		OBJ_26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HandySwiftUI.xcodeproj/HandySwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HandySwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = HandySwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
-					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		A43C30A32478DE5000EE8F88 /* Release */ = {
+		OBJ_38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = NO;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A48B64E92478E6320072BF44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A48B64EA2478E6320072BF44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		A48B652B24790BEE0072BF44 /* Debug */ = {
+		OBJ_44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+			};
+			name = Debug;
+		};
+		OBJ_45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HandySwiftUI.xcodeproj/HandySwiftUITests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = HandySwiftUITests;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
-		A48B652C24790BEE0072BF44 /* Release */ = {
+		OBJ_50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = HandySwiftUI.xcodeproj/HandySwiftUITests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A4E43D9D247911EC0053416C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI.watchOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI.watchOS;
-				PRODUCT_NAME = HandySwiftUI;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Debug;
-		};
-		A4E43D9E247911EC0053416C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI.watchOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI.watchOS;
-				PRODUCT_NAME = HandySwiftUI;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Release;
-		};
-		A4E43DAB247913D80053416C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI.tvOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI.tvOS;
-				PRODUCT_NAME = HandySwiftUI;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
+				TARGET_NAME = HandySwiftUITests;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
-			};
-			name = Debug;
-		};
-		A4E43DAC247913D80053416C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3CWSQGN6ET;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HandySwiftUI.tvOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yip.antonio.HandySwiftUI.tvOS;
-				PRODUCT_NAME = HandySwiftUI;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A43C30962478DE5000EE8F88 /* Build configuration list for PBXProject "HandySwiftUI" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "HandySwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A43C30A22478DE5000EE8F88 /* Debug */,
-				A43C30A32478DE5000EE8F88 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A48B64E82478E6320072BF44 /* Build configuration list for PBXAggregateTarget "HandySwiftUI.xcframework" */ = {
+		OBJ_24 /* Build configuration list for PBXNativeTarget "HandySwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A48B64E92478E6320072BF44 /* Debug */,
-				A48B64EA2478E6320072BF44 /* Release */,
+				OBJ_25 /* Debug */,
+				OBJ_26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A48B652A24790BEE0072BF44 /* Build configuration list for PBXNativeTarget "HandySwiftUI" */ = {
+		OBJ_37 /* Build configuration list for PBXNativeTarget "HandySwiftUIPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A48B652B24790BEE0072BF44 /* Debug */,
-				A48B652C24790BEE0072BF44 /* Release */,
+				OBJ_38 /* Debug */,
+				OBJ_39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4E43D9C247911EC0053416C /* Build configuration list for PBXNativeTarget "HandySwiftUI.watchOS" */ = {
+		OBJ_43 /* Build configuration list for PBXAggregateTarget "HandySwiftUIPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4E43D9D247911EC0053416C /* Debug */,
-				A4E43D9E247911EC0053416C /* Release */,
+				OBJ_44 /* Debug */,
+				OBJ_45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4E43DAA247913D80053416C /* Build configuration list for PBXNativeTarget "HandySwiftUI.tvOS" */ = {
+		OBJ_48 /* Build configuration list for PBXNativeTarget "HandySwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4E43DAB247913D80053416C /* Debug */,
-				A4E43DAC247913D80053416C /* Release */,
+				OBJ_49 /* Debug */,
+				OBJ_50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A43C30932478DE5000EE8F88 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

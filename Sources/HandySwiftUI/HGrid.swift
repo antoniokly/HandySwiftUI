@@ -39,7 +39,7 @@ public struct HGrid<Content: View>: View {
 }
 
 #if DEBUG
-struct HCell_Previews: PreviewProvider {
+struct HGrid_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             HGrid(

@@ -76,6 +76,7 @@ public struct CustomToggleStyle: ToggleStyle {
     }
 }
 
+#if DEBUG
 struct CustomToggleStyle_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -98,3 +99,4 @@ struct CustomToggleStyle_Previews: PreviewProvider {
         .previewLayout(.fixed(width: 200, height: 60))
     }
 }
+#endif
