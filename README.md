@@ -8,12 +8,15 @@ A library of handy SwiftUI components. Keep growing.
 
 ## Installation
 
-Build from source. Supports of CocoaPod, Swift Package, XCFramework(may be) coming soon.
+Add Swift Package Dependency in Xcode, and enter URL ```https://github.com/antoniokly/HandySwiftUI```
 
+```swift
+  .package(url: "https://github.com/antoniokly/HandySwiftUI.git", from: "0.0.1")
+```
 
 ## Usage
 
-```
+```swift
 Import HandySwiftUI
 ```
 
