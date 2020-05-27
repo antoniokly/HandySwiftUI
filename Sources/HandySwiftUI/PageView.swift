@@ -35,23 +35,26 @@ public struct PageView<Content: View>: View {
                 ForEach(0..<self.pageCount, id: \.self) { index in
                     self.content(index)
                         .frame(width: geometry.size.width)
-                }.opacity(self.isNavigating ? 0 : 1)
-                .animation(self.isNavigating ? .none : .default)
+                }
+                .opacity(self.isNavigating ? 0 : 1)
+                .animation(self.isNavigating ? .none : .easeInOut)
             }
                 
             .frame(width: geometry.size.width, alignment: .leading)
             .offset(x: -CGFloat(self.currentPage) * geometry.size.width)
             .offset(x: self.translation)
             .gesture(
-                DragGesture().updating(self.$translation) { value, state, _ in
-                    state = value.translation.width
-                }.onEnded { value in
-                    let offset = value.translation.width / geometry.size.width
-                    let newIndex = (CGFloat(self.currentPage) - offset).rounded()
-                    self.currentPage = min(max(Int(newIndex), 0), self.pageCount - 1)
+                withAnimation {
+                    DragGesture().updating(self.$translation) { value, state, _ in
+                        state = value.translation.width
+                    }.onEnded { value in
+                        let offset = value.translation.width / geometry.size.width
+                        let newIndex = (CGFloat(self.currentPage) - offset).rounded()
+                        self.currentPage = min(max(Int(newIndex), 0), self.pageCount - 1)
+                    }
                 }
             )
-            .animation(Animation.easeOut(duration: 0.3))
+            .animation(.easeInOut(duration: 0.3))
             .navigationBarTitle(self.titles(self.currentPage))
         }
     }
@@ -73,7 +76,7 @@ public extension PageView {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: $0 == self.currentPage ? currentPageSize : defaultSize)
                             .foregroundColor($0 == self.currentPage ? currentPageColor : defaultColor)
-                            .animation(Animation.easeOut(duration: 0.3))
+                            .animation(.easeInOut(duration: 0.3))
                             .opacity(opacity)
                     }
                 }
