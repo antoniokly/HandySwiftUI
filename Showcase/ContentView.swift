@@ -10,11 +10,13 @@ import HandySwiftUI
 
 struct ContentView: View {
     @State var currentPage: Int = 0
+    @State var toggle: Bool = false
+    @State var isNavigating: Bool = false
     
     var body: some View {
         PageView(pageCount: 4,
                  currentPage: $currentPage,
-                 isNavigating: nil,
+                 isNavigating: $isNavigating,
                  content: page
         ).indicator(currentPageSize: 10,
                     defaultSize: 5,
@@ -27,9 +29,19 @@ struct ContentView: View {
     @ViewBuilder
     func page(_ index: Int) -> some View {
         if index == 0 {
-            Color.gray
-                .frame(maxHeight: .infinity)
-                .edgesIgnoringSafeArea(.all)
+            NavigationView{
+                ZStack {
+                    Color(.lightGray)
+                        .frame(maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    Text("PUSH")
+                        .push(isActive: $isNavigating) {
+                            Text("View")
+                    }
+                }
+            }
+            
         } else if index == 1 {
             VStack {
                 HGrid(spacing: 2,
@@ -50,27 +62,33 @@ struct ContentView: View {
                       content: cell)
             }.padding()
         } else {
-            VStack {
-                Toggle(isOn: .constant(false)) {
-                    Text("CustomToggleStyle")
-                    
-                }.toggleStyle(CustomToggleStyle())
+            ZStack {
+                Color.white
+                    .frame(maxHeight: .infinity)
+                    .edgesIgnoringSafeArea(.all)
                 
-                Divider()
-                                    
-                Toggle(isOn: .constant(false)) {
-                    Text("CustomToggleStyle").font(.largeTitle)
-                }.toggleStyle(
-                    CustomToggleStyle(width: 150,
-                                      height: 60,
-                                      gap: 3,
-                                      onText: "開",
-                                      offText: "關",
-                                      statusTextColor: .white,
-                                      onColor: .green,
-                                      offColor: .red,
-                                      buttonColor: .white))
-            }.padding()
+                VStack {
+                    Toggle(isOn: $toggle) {
+                        Text("CustomToggleStyle")
+                        
+                    }.toggleStyle(CustomToggleStyle())
+                    
+                    Divider()
+                                        
+                    Toggle(isOn: $toggle) {
+                        Text("CustomToggleStyle").font(.largeTitle)
+                    }.toggleStyle(
+                        CustomToggleStyle(width: 150,
+                                          height: 60,
+                                          gap: 3,
+                                          onText: "開",
+                                          offText: "關",
+                                          statusTextColor: .white,
+                                          onColor: .green,
+                                          offColor: .red,
+                                          buttonColor: .white))
+                }.padding()
+            }
         }
     }
     
