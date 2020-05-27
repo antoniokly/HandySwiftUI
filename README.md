@@ -1,5 +1,5 @@
-![Latest Stable Version](https://img.shields.io/github/v/tag/antoniokly/HandySwiftUI?color=orange&label=Swift%20Package)
-![Platforms iOS | watchOS | tvOS | macOS](https://img.shields.io/badge/platforms-iOS%2013.0%20%7C%20tvOS%2013.0%20%7C%20watchOS%206.0%20%7C%20macOS%2010.15-orange.svg)
+[![Latest Stable Version](https://img.shields.io/github/v/tag/antoniokly/HandySwiftUI?color=orange&label=Swift%20Package)](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)
+[![Platforms iOS | watchOS | tvOS | macOS](https://img.shields.io/badge/platforms-iOS%2013.0%20%7C%20tvOS%2013.0%20%7C%20watchOS%206.0%20%7C%20macOS%2010.15-orange.svg)](https://developer.apple.com/documentation/swiftui)
 [![GitHub](https://img.shields.io/github/license/antoniokly/HandySwiftUI?color=orange)](https://github.com/antoniokly/HandySwiftUI/blob/master/LICENSE)
 
 # HandySwiftUI
