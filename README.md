@@ -1,6 +1,6 @@
-[![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://swift.org)
+[![Latest Stable Version](https://img.shields.io/github/v/tag/antoniokly/HandySwiftUI?color=orange&label=Swift%20Package)]
 [![Platforms iOS | watchOS | tvOS | macOS](https://img.shields.io/badge/platforms-iOS%2013.0%20%7C%20tvOS%2013.0%20%7C%20watchOS%206.0%20%7C%20macOS%2010.15-orange.svg)](http://www.apple.com)
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tadija/AEXML/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/antoniokly/HandySwiftUI?color=orange)](https://github.com/antoniokly/HandySwiftUI/blob/master/LICENSE)
 
 # HandySwiftUI
 
