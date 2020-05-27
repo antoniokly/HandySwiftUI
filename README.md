@@ -56,7 +56,7 @@ Toggle(isOn: .constant(true)) {
 <img src="./previews/PageView.png" width="200">
 
 ```swift
-PageView(pageCount: 5, currentPage: $currentPage, isNavigating: $isNavigating, titles: { String($0) }) { index in
+PageView(pageCount: 5, currentPage: $currentPage, isNavigating: $isNavigating) { index in
     if index == 0 {
         Color.gray.edgesIgnoringSafeArea(.all)
     } else if index == 1 {
