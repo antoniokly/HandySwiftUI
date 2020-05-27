@@ -23,6 +23,7 @@ public struct PageView<Content: View>: View {
         self.pageCount = pageCount
         self._currentPage = currentPage
         self.content = content
+        self.isNavigating = isNavigating
     }
 
     public var body: some View {
