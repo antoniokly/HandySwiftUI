@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct HGrid<Content: View>: View {
+public struct VGrid<Content: View>: View {
     var fractions: [CGFloat]
     var spacing: CGFloat
     var content: (Int) -> Content
@@ -26,9 +26,9 @@ public struct HGrid<Content: View>: View {
     public var body: some View {
         let count = CGFloat(self.fractions.count)
         return GeometryReader { geometry in
-            HStack(spacing: self.spacing) {
+            VStack(spacing: self.spacing) {
                 ForEach(0..<self.fractions.count) { i in
-                    return self.content(i).frame(width: (geometry.size.width - (self.spacing * (count - 1))) * self.fractions[i])
+                    return self.content(i).frame(height: (geometry.size.height - (self.spacing * (count - 1))) * self.fractions[i])
                 }
             }
         }
@@ -36,14 +36,14 @@ public struct HGrid<Content: View>: View {
 }
 
 #if DEBUG
-struct HGrid_Previews: PreviewProvider {
+struct VGrid_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            HGrid(spacing: 2,
+        HStack {
+            VGrid(spacing: 2,
                   ratios: [1,1,1,1],
                   content: cell)
             
-            HGrid(spacing: 2,
+            VGrid(spacing: 2,
                   ratios: [1,3],
                   content: cell)
         }

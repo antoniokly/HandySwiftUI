@@ -10,23 +10,20 @@ import SwiftUI
 
 public struct PageView<Content: View>: View {
     let pageCount: Int
-    let titles : (Int) -> String
     let content: (Int) -> Content
     
     @Binding var currentPage: Int
-    @Binding var isNavigating: Bool
+    var isNavigating: Binding<Bool>?
     @GestureState var translation: CGFloat = 0
 
     public init(pageCount: Int,
-         currentPage: Binding<Int>,
-         isNavigating: Binding<Bool>,
-         titles: @escaping (Int) -> String,
-         @ViewBuilder content: @escaping (Int) -> Content) {
+                currentPage: Binding<Int>,
+                isNavigating: Binding<Bool>? = nil,
+                @ViewBuilder content: @escaping (Int) -> Content) {
         self.pageCount = pageCount
         self._currentPage = currentPage
-        self._isNavigating = isNavigating
-        self.titles = titles
         self.content = content
+        self.isNavigating = isNavigating
     }
 
     public var body: some View {
@@ -35,8 +32,9 @@ public struct PageView<Content: View>: View {
                 ForEach(0..<self.pageCount, id: \.self) { index in
                     self.content(index)
                         .frame(width: geometry.size.width)
-                }.opacity(self.isNavigating ? 0 : 1)
-                .animation(self.isNavigating ? .none : .default)
+                }
+                .opacity(self.isNavigating?.wrappedValue == true ? 0 : 1)
+                .animation(self.isNavigating?.wrappedValue == true ? .none : .default)
             }
                 
             .frame(width: geometry.size.width, alignment: .leading)
@@ -51,8 +49,39 @@ public struct PageView<Content: View>: View {
                     self.currentPage = min(max(Int(newIndex), 0), self.pageCount - 1)
                 }
             )
-            .animation(Animation.easeOut(duration: 0.3))
-            .navigationBarTitle(self.titles(self.currentPage))
+            .animation(.easeOut(duration: 0.3))
+        }
+    }
+}
+
+struct IndicatorModifier: ViewModifier {
+    @Binding var currentPage: Int
+    var pageCount: Int
+    var currentPageSize: CGFloat
+    var defaultSize: CGFloat
+    var currentPageColor: Color?
+    var defaultColor: Color?
+    var opacity: Double
+    
+    func body(content: Content) -> some View {
+        ZStack {
+            content
+            VStack {
+                Spacer()
+                HStack(alignment: .center) {
+                    ForEach(0..<pageCount, id: \.self) {
+                        Circle()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: $0 == self.currentPage ? self.currentPageSize : self.defaultSize)
+                            .foregroundColor($0 == self.currentPage ? self.currentPageColor : self.defaultColor)
+                            .animation(.easeOut(duration: 0.3))
+                            .opacity(self.opacity)
+                    }
+                }
+            }
+            .watchOS {
+                $0.edgesIgnoringSafeArea(.bottom)
+            }
         }
     }
 }
@@ -63,34 +92,25 @@ public extension PageView {
                    currentPageColor: Color? = .white,
                    defaultColor: Color? = .gray,
                    opacity: Double = 1) -> some View {
-        ZStack {
-            self.body
-            VStack {
-                Spacer()
-                HStack(alignment: .center) {
-                    ForEach(0..<pageCount, id: \.self) {
-                        Circle()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: $0 == self.currentPage ? currentPageSize : defaultSize)
-                            .foregroundColor($0 == self.currentPage ? currentPageColor : defaultColor)
-                            .animation(Animation.easeOut(duration: 0.3))
-                            .opacity(opacity)
-                    }
-                }
-            }.watchOS {
-                $0.edgesIgnoringSafeArea(.bottom)
-            }
-        }
+        self.modifier(IndicatorModifier(currentPage: self.$currentPage,
+                                        pageCount: self.pageCount,
+                                        currentPageSize: currentPageSize,
+                                        defaultSize: defaultSize,
+                                        currentPageColor: currentPageColor,
+                                        defaultColor: defaultColor,
+                                        opacity: opacity))
     }
 }
 
 #if DEBUG
 struct PageView_Previews: PreviewProvider {
-    @State static var currentPage = 1
+    @State static var currentPage = 0
     static var previews: some View {
-        PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: .constant(false), titles: { String($0) }) { index in
+        PageView(pageCount: 5, currentPage: self.$currentPage, isNavigating: nil) { index in
             if index == 0 {
-                Color.gray              .edgesIgnoringSafeArea(.all)
+                Color.gray
+                    .frame(maxHeight: .infinity)
+                    .edgesIgnoringSafeArea(.all)
             } else if index == 1 {
                 Text("Page 2")
             } else if index == 2 {
@@ -110,4 +130,3 @@ struct PageView_Previews: PreviewProvider {
     }
 }
 #endif
-
