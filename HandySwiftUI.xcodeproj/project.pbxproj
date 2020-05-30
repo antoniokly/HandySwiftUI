@@ -88,6 +88,7 @@
 		A43C30922478DE5000EE8F88 = {
 			isa = PBXGroup;
 			children = (
+				A486D21D248251D900CAD177 /* Sources */,
 				A48B652624790BEE0072BF44 /* HandySwiftUI */,
 				A4E43D98247911EC0053416C /* HandySwiftUI.watchOS */,
 				A4E43DA6247913D80053416C /* HandySwiftUI.tvOS */,
@@ -105,17 +106,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A48B652624790BEE0072BF44 /* HandySwiftUI */ = {
+		A486D21D248251D900CAD177 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A48B652724790BEE0072BF44 /* HandySwiftUI.h */,
-				A48B652824790BEE0072BF44 /* Info.plist */,
+				A486D21E248251D900CAD177 /* HandySwiftUI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A486D21E248251D900CAD177 /* HandySwiftUI */ = {
+			isa = PBXGroup;
+			children = (
 				A4E43D8224790C630053416C /* HGrid.swift */,
 				A428378D2479404A00D5B017 /* NavigationLinkModifier.swift */,
 				A42837912479430E00D5B017 /* LazyView.swift */,
 				A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */,
 				A467551A247D0758006D0DF0 /* PageView.swift */,
 				A4AB329D247D185700885127 /* View+.swift */,
+			);
+			path = HandySwiftUI;
+			sourceTree = "<group>";
+		};
+		A48B652624790BEE0072BF44 /* HandySwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A48B652724790BEE0072BF44 /* HandySwiftUI.h */,
+				A48B652824790BEE0072BF44 /* Info.plist */,
 			);
 			path = HandySwiftUI;
 			sourceTree = "<group>";
