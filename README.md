@@ -70,6 +70,9 @@ PageView(pageCount: 5, currentPage: $currentPage, isNavigating: $isNavigating) {
 }.indicator(currentPageSize: 10, defaultSize: 5, currentPageColor: .accentColor, defaultColor: .orange, opacity: 0.8)
 ```
 
+## Known Issues
+watchOS and tvOS may have some issues using Swift Package, the supplied framework project is a solution to that at the moment.
+
 ## Donation
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UXRR2S35YMCQC&source=url)
