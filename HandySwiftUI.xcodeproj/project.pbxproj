@@ -29,14 +29,12 @@
 		A42837942479430E00D5B017 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42837912479430E00D5B017 /* LazyView.swift */; };
 		A467551B247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
 		A467551C247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
-		A467551D247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
 		A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B652724790BEE0072BF44 /* HandySwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4AB329E247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
 		A4AB329F247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
 		A4AB32A0247D185700885127 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB329D247D185700885127 /* View+.swift */; };
 		A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
 		A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
-		A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34C10247B52D100E0B7E8 /* CustomToggleStyle.swift */; };
 		A4E43D8324790C640053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
 		A4E43D9B247911EC0053416C /* HandySwiftUI_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E43D99247911EC0053416C /* HandySwiftUI_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4E43D9F247912130053416C /* HGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E43D8224790C630053416C /* HGrid.swift */; };
@@ -344,8 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A467551D247D0758006D0DF0 /* PageView.swift in Sources */,
-				A4B34C13247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837942479430E00D5B017 /* LazyView.swift in Sources */,
 				A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
 				A4AB32A0247D185700885127 /* View+.swift in Sources */,

@@ -32,12 +32,4 @@ public extension View {
         return self
         #endif
     }
-    
-    func macOS<Content: View>(_ modifier: @escaping (Self) -> Content) -> some View {
-        #if os(macOS)
-        return modifier(self)
-        #else
-        return self
-        #endif
-    }
 }
