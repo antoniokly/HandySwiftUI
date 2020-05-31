@@ -30,6 +30,9 @@
 		A45D2D5724826DE700C521B0 /* VGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5624826DE700C521B0 /* VGrid.swift */; };
 		A45D2D5824826DE700C521B0 /* VGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5624826DE700C521B0 /* VGrid.swift */; };
 		A45D2D5924826DE700C521B0 /* VGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5624826DE700C521B0 /* VGrid.swift */; };
+		A45D2D702482741C00C521B0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5A24826EF900C521B0 /* ActivityIndicator.swift */; };
+		A45D2D712482741D00C521B0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5A24826EF900C521B0 /* ActivityIndicator.swift */; };
+		A45D2D722482741D00C521B0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D2D5A24826EF900C521B0 /* ActivityIndicator.swift */; };
 		A467551B247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
 		A467551C247D0758006D0DF0 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467551A247D0758006D0DF0 /* PageView.swift */; };
 		A48B652924790BEE0072BF44 /* HandySwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A48B652724790BEE0072BF44 /* HandySwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -343,6 +346,7 @@
 				A467551B247D0758006D0DF0 /* PageView.swift in Sources */,
 				A4B34C11247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837922479430E00D5B017 /* LazyView.swift in Sources */,
+				A45D2D702482741C00C521B0 /* ActivityIndicator.swift in Sources */,
 				A428378E2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
 				A4AB329E247D185700885127 /* View+.swift in Sources */,
 				A4E43D8324790C640053416C /* HGrid.swift in Sources */,
@@ -357,6 +361,7 @@
 				A467551C247D0758006D0DF0 /* PageView.swift in Sources */,
 				A4B34C12247B52D100E0B7E8 /* CustomToggleStyle.swift in Sources */,
 				A42837932479430E00D5B017 /* LazyView.swift in Sources */,
+				A45D2D712482741D00C521B0 /* ActivityIndicator.swift in Sources */,
 				A428378F2479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
 				A4AB329F247D185700885127 /* View+.swift in Sources */,
 				A4E43D9F247912130053416C /* HGrid.swift in Sources */,
@@ -371,6 +376,7 @@
 				A42837902479404A00D5B017 /* NavigationLinkModifier.swift in Sources */,
 				A4AB32A0247D185700885127 /* View+.swift in Sources */,
 				A4E43DAD247914080053416C /* HGrid.swift in Sources */,
+				A45D2D722482741D00C521B0 /* ActivityIndicator.swift in Sources */,
 				A45D2D5924826DE700C521B0 /* VGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
