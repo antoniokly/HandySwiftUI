@@ -30,8 +30,6 @@ public struct ActivityIndicator: View {
             }
         }.onAppear {
             self.isAnimating = true
-        }.onDisappear {
-            self.isAnimating = false
         }
         .aspectRatio(1, contentMode: .fit)
         .opacity(isAnimating ? 1 : 0)
@@ -69,7 +67,7 @@ public extension View {
                            duration: Double = 1,
                            width: CGFloat = 50,
                            color: Color? = nil,
-                           opacity: Double = 0.8) -> some View {
+                           opacity: Double = 1) -> some View {
         return self.modifier(ActivityIndicatorModifier(isAnimating: isActive, text: text, duration: duration, width: width, color: color, opacity: opacity))
     }
 }
